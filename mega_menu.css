@@ -1,0 +1,94 @@
+/* Define the body style */
+body {
+
+    font-family:Arial;
+    font-size:12px;
+/*    background: transparent;*/
+}
+
+/*html {
+    background: url(intro-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+/* Make site responsive*/
+@media all and (max-width: 600px) {
+    #menuwrapper ul li {  height: auto; }
+    #container ul li {  display:flex; position: absolute;}
+    #menuwrapper ul li:hover ul li {width: auto; position: absolute;}
+}
+
+
+ 
+/* remove the margin, padding, and list style of UL and LI components to start clean*/
+#menuwrapper ul, #menuwrapper ul li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+ 
+/* apply background color and border bottom white and width to 150px */
+#menuwrapper ul li{
+    background-color: gray;
+    border-bottom:solid 1px white;
+    width:150px;
+    cursor:pointer;
+/*    border-radius:.5em;*/
+}
+ 
+ #container ul li{
+    top: -24px;
+    left: 150px;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    display: block;
+    opacity: .5;
+/*    box-shadow: 2px 2px 3px #ccc;*/
+
+ }
+/* #sub-container {
+    margin-left: 50px;
+    width: 300px;
+    padding: 10px;
+ }*/
+
+/* apply the background hover color when user hovers the mouse over the li component */
+#menuwrapper ul li{
+    background-color:#A47B3D;
+    position:relative;
+}
+ 
+/* apply the link style */
+#menuwrapper ul li a{
+    padding:5px 15px;
+    color:#ffffff;
+    display:inline-block;
+    text-decoration:none;
+}
+ 
+/**** SECOND LEVEL MENU ****/
+/* make the position absolute for flyout menu and hide the ul until the user hovers the parent li item */
+/*#menuwrapper ul li ul{
+    position:absolute;
+    display:none;
+}*/
+ 
+/* When user has hovered the li item, show the ul list by applying display:block, note: 150px is the individual menu width.  */
+/*#menuwrapper ul li:hover ul{
+    left:150px;
+    top:0px;
+    display:block;
+}*/
+ 
+/* apply different background color to 2nd level menu items*/
+/*#menuwrapper ul li ul li{
+    background-color:#A47B3D;
+}*/
+/* Clear float */
+/*.clear{
+    clear:both;
+}*/
